@@ -91,8 +91,9 @@ export const sectionDataPPAT = {
                 items: [
                     "Akta Jual Beli tanah dan bangunan",
                     "Akta Hibah tanah dan bangunan",
-                    "Akta Pembagian Hak Bersama (APHBS)",
-                    "Akta Pemberian Hak Tanggungan"
+                    "Akta Pemberian Hak Tanggungan",
+                    "Akta Pembagian Hak Bersama (APHB)",
+                    "Akta Pembagian Hak Waris (APHW)",
                 ],
                 icon: "fa-circle",
                 iconColor: "text-blue-500",
@@ -289,3 +290,77 @@ export const galleryItems = [
         description: "Tampak samping kantor dengan desain modern dan ornamen dekoratif."
     }
 ];
+
+export const organizationData = {
+    header: {
+        title: "Riwayat Organisasi",
+        description: "Aktivitas organisasi dan keanggotaan dalam berbagai asosiasi profesi."
+    },
+    organizations: [
+        {
+            name: "Ketua Biro Hukum DPC Parade Nusantara",
+            icon: "https://res.cloudinary.com/du4wegspv/image/upload/f_auto,q_auto,w_800/v1756940224/OIP_ol4zlm.jpg",
+            color: "blue",
+            description: "Ketua Biro Hukum DPC Parade Nusantara ( Persatuan Rakyat Desa ) Kab Tegal",
+            period: "2010 - 2013",
+            role: "Ketua"
+        },
+        {
+            name: "Ketua Cabang ( DPC ) Papdesi",
+            icon: "https://res.cloudinary.com/du4wegspv/image/upload/f_auto,q_auto,w_800/v1756940301/OIP_wmvhgt.jpg",
+            color: "blue",
+            description: "Ketua Cabang ( DPC ) Papdesi ( Persatuan Aparatur Pemerintah Desa Seluruh Indonesia ) Kab Tegal Provinsi Jawa Tengah",
+            period: "2020 - 2022",
+            role: "Ketua"
+        },
+    ],
+    bankCooperation: {
+        title: "Kerjasama Perbankan",
+        banks: [
+            {
+                name: "Bank BTN",
+                imageUrl: "https://res.cloudinary.com/du4wegspv/image/upload/v1754928325/bank-tabungan-negara-btn-logo-ED226D0731-seeklogo.com_mgyfdh.png"
+            },
+            {
+                name: "Bank BTN Syariah",
+                imageUrl: "https://res.cloudinary.com/du4wegspv/image/upload/v1754928421/Logo_Bank_BTN_Syariah_yleypi.jpg"
+            },
+            {
+                name: "BNI",
+                imageUrl: "https://res.cloudinary.com/du4wegspv/image/upload/v1754928659/OIP_jtrgqh.jpg"
+            },
+            {
+                name: "Bank BJB",
+                imageUrl: "https://res.cloudinary.com/du4wegspv/image/upload/v1754928835/OIP_i7upgm.jpg"
+            },
+            {
+                name: "Bank BJB Syariah",
+                imageUrl: "https://res.cloudinary.com/du4wegspv/image/upload/v1754928961/OIP_vxtiie.jpg"
+            },
+            {
+                name: "Bank Mandiri",
+                imageUrl: "https://res.cloudinary.com/du4wegspv/image/upload/v1754929035/OIP_sndsql.jpg"
+            },
+            {
+                name: "Bank Syariah Indonesia",
+                imageUrl: "https://res.cloudinary.com/du4wegspv/image/upload/v1754929101/OIP_wmfs92.jpg"
+            },
+            {
+                name: "Maybank",
+                imageUrl: "https://res.cloudinary.com/du4wegspv/image/upload/v1754929173/OIP_eeshst.jpg"
+            },
+            {
+                name: "Bank BRI",
+                imageUrl: "https://res.cloudinary.com/du4wegspv/image/upload/v1754929218/OIP_q56dlr.jpg"
+            },
+            {
+                name: "Bank BCA",
+                imageUrl: "https://res.cloudinary.com/du4wegspv/image/upload/v1754929281/OIP_okynpt.jpg"
+            },
+            {
+                name: "CIMB Bank",
+                imageUrl: "https://res.cloudinary.com/du4wegspv/image/upload/v1754929382/OIP_pek7q8.jpg"
+            }
+        ]
+    }
+};

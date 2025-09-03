@@ -1,4 +1,4 @@
-import { AboutSection, ContactSection, EducationSection, VisionSection } from "../components/SectionUi";
+import { AboutSection, ContactSection, EducationSection, OrganizationSection, VisionSection, } from "../components/SectionUi";
 import Header from "../components/Header";
 
 export default function About() {
@@ -8,6 +8,7 @@ export default function About() {
             <div className="font-sans bg-gray-50 text-gray-700">
                 <AboutSection />
                 <EducationSection />
+                <OrganizationSection />
                 <VisionSection />
                 <ContactSection />
             </div>

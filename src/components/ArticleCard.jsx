@@ -5,18 +5,14 @@ export default function ArticleCard({ article, darkMode = false }) {
     const displayTime = article.jam_update || article.jam_upload
     const isUpdated = !!article.tanggal_update
 
-    // Fungsi untuk mengoptimalkan gambar Cloudinary
     const optimizeCloudinaryImage = (url) => {
-        // Jika gambar sudah dari Cloudinary dan belum dioptimalkan
         if (url.includes('res.cloudinary.com')) {
-            // Jika sudah memiliki parameter query, tambahkan parameter optimasi
             if (url.includes('?')) {
                 return url.replace('/upload/', '/upload/f_auto,q_auto,w_800/')
             } else {
                 return url.replace('/upload/', '/upload/f_auto,q_auto,w_800/')
             }
         }
-        // Jika bukan dari Cloudinary, return URL asli
         return url
     }
 

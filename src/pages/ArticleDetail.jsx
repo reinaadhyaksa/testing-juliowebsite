@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import { supabase } from '../services/supabase'
 import { useParams, useNavigate } from 'react-router-dom'
 import { useAuth } from '../components/AuthContext'
-import ReactQuill from 'react-quill-new';
 import 'react-quill-new/dist/quill.snow.css';
 import { Loading } from '../components/Template';
 import Header from '../components/Header';

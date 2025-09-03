@@ -7,6 +7,7 @@ import {
     educationData, 
     sectionDataVision,
     galleryItems,
+    organizationData
 } 
 from "../data";
 import { 
@@ -194,7 +195,7 @@ export const OfficeGallery = () => {
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <SectionHeader
                     title={"Galeri Kantor Notaris Tegal"}
-                    description={"Kantor notaris profesional di Cirebon yang nyaman untuk melayani kebutuhan hukum dan pertanahan Anda."}
+                    description={"Kantor notaris profesional di Tegal yang nyaman untuk melayani kebutuhan hukum dan pertanahan Anda."}
                     darkMode={true}
                 />
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -350,6 +351,7 @@ export const ContactSection = () => {
                                 <div>
                                     <h4 className="font-medium text-white mb-1">Telepon</h4>
                                     <p className="text-gray-300">085712269000</p>
+                                    <p className="text-gray-300">085742419333</p>
                                 </div>
                             </div>
 
@@ -398,6 +400,36 @@ export const ContactSection = () => {
         </section>
     )
 }
+
+export const OrganizationSection = () => {
+    return (
+        <section className="py-16 bg-gray-900">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <SectionHeader
+                    title={organizationData.header.title}
+                    description={organizationData.header.description}
+                    darkMode={true}
+                />
+
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {organizationData.organizations.map((org, index) => (
+                        <OrganizationCard
+                            key={index}
+                            name={org.name}
+                            icon={org.icon}
+                            color={org.color}
+                            description={org.description}
+                            period={org.period}
+                            role={org.role}
+                            animationDelay={(index % 3 + 1) * 100}
+                            darkMode={true}
+                        />
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+};
 
 export const WhattsappButton = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);

@@ -4,13 +4,13 @@ import ArticleForm from '../components/ArticleForm'
 import { supabase } from '../services/supabase'
 import { Loading, SectionHeader } from '../components/Template'
 import Header from '../components/Header'
-import { useAuth } from '../components/AuthContext' // Import useAuth
+import { useAuth } from '../components/AuthContext'
 
 export default function Articles() {
     const [articles, setArticles] = useState([])
     const [loading, setLoading] = useState(true)
     const [showForm, setShowForm] = useState(false)
-    const { user } = useAuth() // Dapatkan status user
+    const { user } = useAuth() 
 
     useEffect(() => {
         fetchArticles()
@@ -58,7 +58,6 @@ export default function Articles() {
                     <h1 className="text-xl md:text-3xl font-bold text-white" data-aos="fade-up">
                         Artikel Notaris & PPAT Cirebon
                     </h1>
-                    {/* Hanya tampilkan tombol jika user sudah login */}
                     {user && (
                         <button
                             onClick={() => setShowForm(!showForm)}

@@ -4,9 +4,7 @@ import { supabase } from '../services/supabase'
 const AuthContext = createContext()
 
 export function AuthProvider({ children }) {
-    // In your AuthContext.js
     const [user, setUser] = useState(() => {
-        // Check localStorage when initializing
         const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true'
         const userEmail = localStorage.getItem('userEmail')
         return isLoggedIn ? { email: userEmail } : null
