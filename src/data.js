@@ -209,7 +209,7 @@ export const aboutData = {
             },
             {
                 role: "Notaris & PPAT",
-                details: "Notaris & PPAT Wilayah Kerja Kabupaten Tegal"
+                details: "Notaris & PPAT Wilayah Kerja Kabupaten Tegal (2023 - Sekarang)"
             }
         ]
     }
