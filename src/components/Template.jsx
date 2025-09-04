@@ -6,6 +6,24 @@ export const SectionHeader = ({ title, description, darkMode = false }) => (
     </div>
 );
 
+export const generateMetaDescription = (content, maxLength = 160) => {
+    const plainText = content.replace(/<[^>]*>/g, '');
+    return plainText.length > maxLength
+        ? plainText.substring(0, maxLength) + '...'
+        : plainText;
+};
+
+export const createSlug = (text) => {
+    return text
+        .toString()
+        .toLowerCase()
+        .replace(/\s+/g, '-')
+        .replace(/[^\w\-]+/g, '')
+        .replace(/\-\-+/g, '-')
+        .replace(/^-+/, '')
+        .replace(/-+$/, '');
+};
+
 export const LegalSection = ({ title, icon, items, iconColor, animation, darkMode = false, description }) => (
     <div
         className={`${darkMode ? 'bg-gray-800 border-gold-500' : 'bg-gray-50 border-blue-600'} border-l-4 p-6 rounded-lg mb-6`}

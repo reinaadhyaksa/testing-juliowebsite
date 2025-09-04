@@ -9,6 +9,7 @@ import ArticleDetail from './pages/ArticleDetail'
 import EditArticleForm from './components/EditArticleForm'
 import { AuthProvider } from './components/AuthContext'
 import { WhattsappButton } from './components/SectionUi'
+import Services from './pages/services'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -30,6 +31,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
+              <Route path="/services" element={<Services />} />
               <Route path="/articles" element={<Articles />} />
               <Route path="/articles/:id" element={<ArticleDetail />} />
               <Route path="/articles/edit/:id" element={<EditArticleForm />} />

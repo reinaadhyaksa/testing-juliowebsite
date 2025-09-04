@@ -37,29 +37,26 @@ export const HeroSection = () => {
                 <div className="md:flex items-center">
                     <div className="md:w-1/2 mb-8 md:mb-0" data-aos="fade-right">
                         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
-                            Notaris & PPAT Tegal <br />
-                            <span className="text-gold-500 block md:inline mt-2">
-                                HARSOYO, S.IP, SH., MKn
-                            </span>
+                            Notaris & PPAT Tegal <span className="text-gold-500 block md:inline mt-2">Harsoyo, S.IP, SH., MKn</span>
                         </h1>
                         <h2 className="text-lg md:text-xl text-gray-300 mb-6 font-medium">
-                            Spesialis Akta & Pengurusan Dokumen Resmi di Tegal
+                            Layanan Notaris dan PPAT Profesional di Tegal, Jawa Tengah
                         </h2>
                         <p className="text-gray-400 mb-8 max-w-lg text-sm md:text-base">
-                            Dengan pengalaman lebih dari 2 tahun, kami menyediakan layanan notaris & PPAT profesional yang cepat, aman, dan sesuai peraturan, dengan pendekatan personal untuk setiap klien.
+                            Sebagai Notaris dan PPAT berlisensi di Tegal, Jawa Tengah, kami menyediakan layanan hukum profesional termasuk pembuatan akta notaris, pengurusan sertifikat tanah, legalisasi dokumen, dan konsultasi hukum dengan pendekatan personal untuk setiap klien.
                         </p>
                         <div className="flex space-x-4">
                             <Link
                                 to={"/about"}
                                 className="bg-gold-600 hover:bg-gold-500 text-gray-900 font-semibold px-6 py-3 rounded-lg transition-all text-sm md:text-base"
                             >
-                                Tentang Saya
+                                Tentang Notaris
                             </Link>
                             <Link
                                 to={"/about"}
                                 className="border border-gold-500 text-gold-500 hover:bg-gray-900 px-6 py-3 rounded-lg transition-all text-sm md:text-base"
                             >
-                                Layanan Kami
+                                Layanan PPAT
                             </Link>
                         </div>
                     </div>
@@ -67,20 +64,17 @@ export const HeroSection = () => {
                         <div className="relative">
                             <img
                                 src="https://res.cloudinary.com/du4wegspv/image/upload/f_auto,q_auto,w_800/v1756899416/IMG_20250903_183535_wqydjs.jpg"
-                                alt="Notaris PPAT Cirebon - Dr. Janudin Umar"
+                                alt="Harsoyo Notaris dan PPAT Tegal, Jawa Tengah - Melayani jasa notaris dan ppat profesional"
                                 className="rounded-lg shadow-2xl w-full max-w-xs md:max-w-sm h-[400px] border-4 border-gold-500 object-cover"
                             />
                             <div className="absolute -bottom-4 -right-4 bg-gray-900 p-3 rounded-lg shadow-md border border-gold-500">
                                 <div className="flex items-center">
-                                    <div className="bg-gold-100 p-2 rounded-full mr-3">
-                                        <div className="fas fa-award text-gold-600 text-sm"></div>
-                                    </div>
                                     <div>
-                                        <p className="text-sm font-semibold text-white">2+ Tahun</p>
-                                        <p className="text-xs text-gray-400">Pengalaman</p>
+                                        <p className="text-xs text-gray-400">Sejak 2023</p>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -219,29 +213,29 @@ export const AboutSection = () => {
         <section className="py-16 bg-gray-900">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-4">
                 <SectionHeader
-                    title={aboutData.header.title}
-                    description={aboutData.header.description}
+                    title="Notaris dan PPAT Tegal, Jawa Tengah - Harsoyo, S.IP, SH., MKn"
+                    description="Profil lengkap Harsoyo, Notaris dan PPAT profesional yang melayani wilayah Tegal dan Jawa Tengah dengan pengalaman sejak tahun 2023 dalam bidang jasa notaris dan PPAT."
                     darkMode={true}
                 />
 
                 <div className="md:flex items-center">
                     <ProfileImage
                         imageUrl={aboutData.profile.imageUrl}
-                        altText={`Notaris Cirebon - ${aboutData.profile.altText}`}
+                        altText="Harsoyo Notaris dan PPAT Tegal, Jawa Tengah"
                         darkMode={true}
                     />
 
                     <div className="md:w-2/3 md:pl-12" data-aos="fade-left">
                         <ProfileDescription
-                            title={aboutData.profile.title}
-                            description={aboutData.profile.description}
+                            title="Tentang Notaris Harsoyo di Tegal"
+                            description="Harsoyo, S.IP, SH., MKn adalah Notaris dan PPAT berlisensi yang berkantor di Tegal, Jawa Tengah. Dengan pengalaman sejak tahun 2023, beliau melayani berbagai kebutuhan hukum termasuk pembuatan akta notaris, pengurusan sertifikat tanah, legalisasi dokumen, dan konsultasi hukum untuk masyarakat Tegal dan sekitarnya."
                             darkMode={true}
                         />
 
                         <SkillsSection skills={aboutData.skills} darkMode={true} />
 
                         <ExperienceSection
-                            title={aboutData.experience.title}
+                            title="Pengalaman Notaris di Tegal"
                             items={aboutData.experience.items}
                             darkMode={true}
                         />
@@ -322,14 +316,14 @@ export const ContactSection = () => {
         <section id="contact" className="py-16 bg-gray-900">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16" data-aos="fade-up">
-                    <h2 className="text-3xl font-bold text-white mb-4">Hubungi Kami</h2>
+                    <h2 className="text-3xl font-bold text-white mb-4">Hubungi Notaris dan PPAT Harsoyo di Tegal</h2>
                     <div className="w-20 h-1 bg-gold-500 mx-auto mb-6"></div>
-                    <p className="text-gray-300 max-w-2xl mx-auto">Kantor Notaris & PPAT Cirebon siap melayani kebutuhan legal Anda dengan profesionalisme dan keahlian.</p>
+                    <p className="text-gray-300 max-w-2xl mx-auto">Kantor Notaris & PPAT Harsoyo siap melayani kebutuhan legal Anda dengan profesionalisme dan keahlian di wilayah Tegal, Jawa Tengah.</p>
                 </div>
 
                 <div className="grid md:grid-cols-1 gap-12">
                     <div data-aos="fade-right">
-                        <h3 className="text-xl font-semibold text-white mb-6">Informasi Kontak</h3>
+                        <h3 className="text-xl font-semibold text-white mb-6">Informasi Kontak Notaris Tegal</h3>
 
                         <div className="space-y-6">
                             <div className="flex items-start">
@@ -337,10 +331,11 @@ export const ContactSection = () => {
                                     <i className="fas fa-map-marker-alt text-gold-500"></i>
                                 </div>
                                 <div>
-                                    <h4 className="font-medium text-white mb-1">Alamat Kantor</h4>
+                                    <h4 className="font-medium text-white mb-1">Alamat Kantor Notaris Tegal</h4>
                                     <p className="text-gray-300">
-                                        JL. Hasyim Dirjo Subroto Desa Wangandawa, Kecamatan Talang, Kabupaten Tegal
+                                        JL. Hasyim Dirjo Subroto Desa Wangandawa, Kecamatan Talang, Kabupaten Tegal, Jawa Tengah
                                     </p>
+                                    <p className="text-gray-400 text-sm mt-1">Lokasi strategis untuk layanan notaris dan ppat di Tegal</p>
                                 </div>
                             </div>
 
@@ -349,38 +344,44 @@ export const ContactSection = () => {
                                     <i className="fas fa-phone-alt text-gold-500"></i>
                                 </div>
                                 <div>
-                                    <h4 className="font-medium text-white mb-1">Telepon</h4>
+                                    <h4 className="font-medium text-white mb-1">Telepon Notaris Tegal</h4>
                                     <p className="text-gray-300">085712269000</p>
                                     <p className="text-gray-300">085742419333</p>
+                                    <p className="text-gray-400 text-sm mt-1">Hubungi untuk konsultasi notaris dan ppat</p>
                                 </div>
                             </div>
 
-                            {/* <div className="flex items-start">
+                            <div className="flex items-start">
                                 <div className="bg-gray-700 p-3 rounded-full mr-4 border border-gold-500">
                                     <i className="fas fa-envelope text-gold-500"></i>
                                 </div>
                                 <div>
                                     <h4 className="font-medium text-white mb-1">Email</h4>
                                     <p className="text-gray-300">
-                                        jaenudinumar@gmail.com
+                                        yudhistirayudhistira20@gmail.com
                                     </p>
+                                    <p className="text-gray-300">
+                                        harsoyo.notaris18@gmail.com
+                                    </p>
+                                    <p className="text-gray-400 text-sm mt-1">Hubungi untuk konsultasi notaris dan ppat</p>
                                 </div>
-                            </div> */}
+                            </div>
 
                             <div className="flex items-start">
                                 <div className="bg-gray-700 p-3 rounded-full mr-4 border border-gold-500">
                                     <i className="fas fa-clock text-gold-500"></i>
                                 </div>
                                 <div>
-                                    <h4 className="font-medium text-white mb-1">Jam Kerja</h4>
+                                    <h4 className="font-medium text-white mb-1">Jam Kerja Notaris Tegal</h4>
                                     <p className="text-gray-300">Senin-Jumat: 08.00 - 17.00 WIB</p>
+                                    <p className="text-gray-400 text-sm mt-1">Melayani jasa notaris dan ppat selama jam kerja</p>
                                 </div>
                             </div>
                         </div>
 
                         <div className="mt-8">
                             <h4 className="font-medium text-white mb-4">
-                                Lokasi Kantor di Wangandawa, Talang, Tegal
+                                Lokasi Kantor Notaris di Wangandawa, Talang, Tegal, Jawa Tengah
                             </h4>
                             <div className="bg-gray-700 rounded-lg overflow-hidden h-64 border border-gray-600">
                                 <iframe
@@ -390,9 +391,12 @@ export const ContactSection = () => {
                                     style={{ border: 0 }}
                                     allowFullScreen=""
                                     loading="lazy"
-                                    title="Lokasi di Jalan Hasyim Dirjosubroto, Wangandawa"
+                                    title="Lokasi Kantor Notaris dan PPAT Harsoyo di Tegal, Jawa Tengah"
                                 ></iframe>
                             </div>
+                            <p className="text-gray-400 text-sm mt-2">
+                                Kantor Notaris dan PPAT Harsoyo mudah diakses dari berbagai wilayah di Tegal dan Jawa Tengah
+                            </p>
                         </div>
                     </div>
                 </div>

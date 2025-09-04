@@ -5,6 +5,7 @@ import { useAuth } from '../components/AuthContext'
 import 'react-quill-new/dist/quill.snow.css';
 import { Loading } from '../components/Template';
 import Header from '../components/Header';
+import Breadcrumb from '../components/Breadcrumb';
 
 export default function ArticleDetail() {
     const { id } = useParams()
@@ -65,14 +66,15 @@ export default function ArticleDetail() {
     return (
         <>
             <Header />
+            <Breadcrumb />
 
             <section className="pt-24 pb-16 md:pt-32 md:pb-24 bg-gray-900">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center" data-aos="fade-up">
-                        <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">Detail Artikel</h1>
+                        <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">Detail Artikel Notaris Tegal</h1>
                         <div className="w-20 h-1 bg-gold-500 mx-auto mb-6"></div>
                         <p className="text-gray-300 max-w-2xl mx-auto">
-                            Informasi lengkap artikel hukum dari Notaris & PPAT Cirebon
+                            Informasi lengkap artikel hukum dari Notaris & PPAT Harsoyo di Tegal, Jawa Tengah
                         </p>
                     </div>
                 </div>
@@ -141,7 +143,7 @@ export default function ArticleDetail() {
                                     className="w-full h-auto rounded-lg"
                                 />
                                 <p className="text-sm text-gray-500 mt-2 text-center">
-                                    Gambar ilustrasi artikel {article.judul}
+                                    Gambar ilustrasi artikel {article.judul} - Notaris dan PPAT Tegal
                                 </p>
                             </div>
                         )}
@@ -156,6 +158,20 @@ export default function ArticleDetail() {
                             className="ql-editor p-0 prose-invert"
                             dangerouslySetInnerHTML={{ __html: article.isi }}
                         />
+                    </div>
+
+                    <div className="mt-12 p-6 bg-gray-700 rounded-lg">
+                        <h3 className="text-xl font-semibold text-white mb-4">Tentang Penulis</h3>
+                        <p className="text-gray-300">
+                            Artikel ini ditulis oleh <strong>Harsoyo, S.IP, SH., MKn</strong>, Notaris dan PPAT berlisensi
+                            yang berkantor di Tegal, Jawa Tengah. Dengan pengalaman lebih dari 2 tahun, beliau melayani
+                            berbagai kebutuhan hukum termasuk jasa notaris, ppat, pengurusan sertifikat tanah, dan konsultasi
+                            hukum untuk masyarakat Tegal dan sekitarnya.
+                        </p>
+                        <p className="text-gray-300 mt-2">
+                            Untuk konsultasi dengan Notaris dan PPAT di Tegal, hubungi kami di telepon
+                            <strong> 085712269000</strong> atau <strong>085742419333</strong>.
+                        </p>
                     </div>
                 </div>
             </section>
